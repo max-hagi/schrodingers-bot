@@ -1,2 +1,2 @@
 # schrodingers-bot
-Discord bot
+Sick bot
