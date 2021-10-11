@@ -1,0 +1,2 @@
+# schrodingers-bot
+Discord bot
