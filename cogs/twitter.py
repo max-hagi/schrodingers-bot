@@ -13,11 +13,13 @@ class Twitter(commands.Cog):
         self.client = client
 
     @commands.command()
+    @commands.has_role("Moderator")
     async def tweet(self, ctx, *, arg):
         api.update_status(arg)
         await ctx.send("Tweet has been sent!\n https://twitter.com/hell0hell0hello")
 
     @commands.command()
+    @commands.has_role("Moderator")
     async def tname(self, ctx, *, arg):
         api.update_profile(name=arg)
         await ctx.send("Name Updated!\n https://twitter.com/hell0hell0hello")
