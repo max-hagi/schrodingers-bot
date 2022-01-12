@@ -13,7 +13,7 @@ class Twitter(commands.Cog):
         self.client = client
 
     @commands.command()
-    async def tweet(self, ctx, arg):
+    async def tweet(self, ctx, *, arg):
         api.update_status(arg)
         await ctx.send("Tweet has been sent!\n https://twitter.com/hell0hell0hello")
 
