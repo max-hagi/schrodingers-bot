@@ -17,6 +17,11 @@ class Twitter(commands.Cog):
         api.update_status(arg)
         await ctx.send("Tweet has been sent!\n https://twitter.com/hell0hell0hello")
 
+    @commands.command()
+    async def tname(self, ctx, *, arg):
+        api.update_profile(name=arg)
+        await ctx.send("Name Updated!\n https://twitter.com/hell0hell0hello")
+
 
 def setup(client):
     client.add_cog(Twitter(client))
