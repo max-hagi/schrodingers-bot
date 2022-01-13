@@ -14,6 +14,7 @@ class Image(commands.Cog):
         self.client = client
 
     @commands.command()
+    @commands.has_role("Moderator")
     async def picsearch(self, ctx, *, arg):
         options = Options()
         options.headless = True
