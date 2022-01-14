@@ -35,3 +35,5 @@ for filename in os.listdir("./cogs"):
         print(f'Unable to load {filename[:-3]}')
 
 client.run(os.getenv('TOKEN'))
+
+#Testing if this thing works from my desktop
